@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGN UP</title>
+    <title>LOGIN</title>
 
     <!-- Authentication -->
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
@@ -25,32 +25,23 @@
    <!-- ===Page design=== -->
   <section class="main container">
      <div class="main-heading">
-    <h2>SIGN UP</h2>
+    <h2>LOGIN</h2>
     <div class="form-section">
         <span>Email</span> <br>
-        <input id="email" type="email">
+        <input id="userEmail" type="email">
     </div>
     <div class="form-section">
         <span>Password</span> <br>
-        <input id="password" type="password">
+        <input id="userPassword" type="password">
     </div>
     <div class="button">
-        <button onclick="signUp()">SIGN UP</button>
+        <button onclick="login()">LOGIN</button>
     </div>
    </div>
 
    <!-- ===login=== -->
    <div class="login-main">
-    <h5>Already a user?</h5>
-    <a href="login.html">LOGIN</a>
-   </div>
-   <div class="btnmain">
-    <div class="form-login">
-        <button onclick="loginWithGoogle()">Login from Google</button>
-       </div>
-       <div class="form-login">
-        <button onclick="loginWithGithub()">Login from Github</button>
-       </div>
+    <button onclick="newAcc()">Create a new Account</button>
    </div>
   </section>
 
